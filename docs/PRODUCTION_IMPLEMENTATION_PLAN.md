@@ -7,6 +7,8 @@
 - **Primary region:** India (`ap-south-1`, Mumbai), subject to business and legal approval
 **Source of truth:** This plan resolves and extends the three PDFs in `docs/`. Where this plan conflicts with an unsafe implementation detail in those PDFs, this plan takes precedence after stakeholder approval.
 
+> **Architecture review note (2026-09-09):** The NestJS/AWS selections below are the original production baseline, not an irreversible decision. Before Phase 1, execute the evidence-based spikes and adoption gates in the [Zerodha-Inspired FOSS Architecture](ZERODHA_INSPIRED_FOSS_ARCHITECTURE.md). Accepted ADRs supersede stack-specific choices in this document; domain invariants, security controls, test gates, recovery requirements, and task outcomes remain mandatory.
+
 ---
 
 ## 1. Outcome and guiding decisions

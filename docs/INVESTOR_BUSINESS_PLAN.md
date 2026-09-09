@@ -299,7 +299,7 @@ The detailed engineering execution plan is maintained in [PRODUCTION_IMPLEMENTAT
 
 ### 12.1 Recommended product architecture
 
-For this product, the recommended founder-stage implementation choice is:
+For this product, the current founder-stage implementation baseline is below. Before implementation is frozen, management should complete the measurable backend and FOSS adoption spikes in the [Zerodha-Inspired FOSS Architecture](ZERODHA_INSPIRED_FOSS_ARCHITECTURE.md). The aim is to reuse safe generic systems without fragmenting the transactional product core.
 
 - **FastAPI modular monolith** for business logic and versioned mobile/admin APIs.
 - **Supabase managed PostgreSQL** with PostGIS for property discovery.
