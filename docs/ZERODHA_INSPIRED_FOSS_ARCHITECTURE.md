@@ -4,7 +4,7 @@
 - **Version:** 1.0
 - **Prepared:** 2026-09-09
 - **Decision point:** Before production Phase 1
-- **Related:** [Production Plan](PRODUCTION_IMPLEMENTATION_PLAN.md), [Investor Plan](INVESTOR_BUSINESS_PLAN.md)
+- **Related:** [Open-Source Ecosystem Evaluation](OPEN_SOURCE_ECOSYSTEM_EVALUATION.md), [Production Plan](PRODUCTION_IMPLEMENTATION_PLAN.md), [Investor Plan](INVESTOR_BUSINESS_PLAN.md)
 
 > “Zerodha-inspired” means applying Zerodha's published engineering principles and evaluating public open-source projects. It does not mean Zerodha's private trading platform is available, that its security automatically transfers to BUDE HOME, or that every tool on its stack page should be installed.
 
@@ -18,7 +18,7 @@ Yes, BUDE HOME should try this approach—but as a **small custom core with repl
 - **PostgreSQL + PostGIS:** sole source of truth for organizations, beds, stays, invoices, deposits, payments, authorization, and live listings.
 - **Flutter:** owner, staff, and tenant mobile experiences.
 - **Frappe/ERPNext:** internal CRM, owner onboarding, approvals, procurement, vendor workflows, and company accounting—not the product core.
-- **LibreDesk:** support; **listmonk:** consented campaigns; **Metabase:** internal BI, each adopted only after an isolated proof and security/license review.
+- **Competitive satellite proofs:** LibreDesk/Chatwoot/Zammad for support, Metabase/Superset for internal BI, and listmonk for consented campaigns, each adopted only after an isolated proof and security/license review.
 - **Transactional PostgreSQL outbox first; NATS JetStream later** when several independent consumers justify a bus.
 - **Managed critical infrastructure first; selective self-hosting later** after cost, security, staffing, HA, and restore gates pass.
 
@@ -102,7 +102,7 @@ flowchart LR
 | [Flutter](https://flutter.dev/) | Android/iOS | BSD-style | **Adopt.** One role-aware app; Android pilot first |
 | [Supabase managed](https://supabase.com/) | Managed PostgreSQL/Auth/Storage accelerator | FOSS components plus service terms | **Use selectively.** Core owns authorization; service keys stay server-side; stored objects need separate recovery |
 | [Frappe](https://frappeframework.com/) / [ERPNext](https://erpnext.com/) | Internal CRM, approvals, vendors, procurement, accounts | Frappe MIT; ERPNext GPLv3 | **Internal pilot.** Separate DB/hostname; minimal API/event projection; no KYC or core financial writes |
-| [LibreDesk](https://github.com/abhinavxd/libredesk) | Support inbox, knowledge base, SLAs | AGPLv3 | **Isolated proof.** Mirror case context only; evaluate young-project maturity, SSO, audit, export, and restore |
+| [LibreDesk](https://github.com/abhinavxd/libredesk) | Support inbox, knowledge base, SLAs | AGPLv3 | **Support bake-off finalist, not preselected.** Compare with Chatwoot and Zammad; mirror case context only; evaluate maturity, auth, audit, export, and restore |
 | [listmonk](https://github.com/knadh/listmonk) | Opt-in newsletters and owner education | AGPLv3 | **Campaigns only.** Transactional rent/payment/security messages remain in BUDE; core owns consent/suppression |
 | [Metabase](https://www.metabase.com/) | Internal BI | OSS AGPL; commercial rules for some embedding | **Internal only.** Read replica/curated views, masked fields, read-only role; no customer embedding initially |
 | OpenTelemetry + Prometheus-compatible metrics + Alertmanager | Traces, metrics, SLOs, alerts | Project-specific FOSS licenses | **Baseline.** Instrument API, worker, DB pool, outbox, providers, reconciliation, and security events |
@@ -284,8 +284,8 @@ Gate: one internal burden is measurably reduced and Frappe failure cannot break 
 
 ### T6 — Support and campaigns proofs (Weeks 4–6; support/growth/security; 8 days)
 
-- [ ] Score LibreDesk against one managed fallback.
-- [ ] Configure roles, SSO/OIDC, audit, SLA, attachment limits, export, and deletion.
+- [ ] Score LibreDesk, Chatwoot, and Zammad against one managed fallback using identical scenarios.
+- [ ] Inventory edition/paywall boundaries; configure available roles, SSO/OIDC, audit, SLA, attachment limits, export, and deletion.
 - [ ] Link complaint ID with minimal tenant context.
 - [ ] Test backup, restore, upgrade, rollback, outage, and complete removal.
 - [ ] Define transactional, operational, and marketing message classes.
@@ -420,7 +420,7 @@ A free service that consumes senior engineering time without measurable product 
 2. Build the unique PG transactional domain once.
 3. Start with FastAPI unless the measured Go spike and team capability clearly win.
 4. Use Frappe/ERPNext strongly for internal workflows but outside the customer trust boundary.
-5. Prove listmonk, LibreDesk, and Metabase as isolated satellites.
+5. Select support and BI satellites through competitive proofs; prove listmonk separately for campaigns.
 6. Start with an outbox; add NATS only for proven consumers.
 7. Keep Flutter.
 8. Keep critical infrastructure managed until self-hosting passes TCO, security, HA, and recovery gates.
@@ -440,6 +440,7 @@ A free service that consumes senior engineering time without measurable product 
 - [Logging with Vector, ClickHouse, and Metabase](https://zerodha.tech/blog/logging-at-zerodha/)
 - [High-volume PDF worker architecture](https://zerodha.tech/blog/1-5-million-pdfs-in-25-minutes/)
 - [Zerodha GitHub organization](https://github.com/zerodha)
+- [Broader 53-project open-source ecosystem evaluation](OPEN_SOURCE_ECOSYSTEM_EVALUATION.md)
 - [Frappe REST APIs](https://docs.frappe.io/framework/user/en/guides/integration/rest_api)
 - [Supabase self-hosting responsibilities](https://supabase.com/docs/guides/self-hosting)
 - [Supabase shared-responsibility model](https://supabase.com/docs/guides/deployment/shared-responsibility-model)
