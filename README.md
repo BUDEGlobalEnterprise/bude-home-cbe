@@ -9,6 +9,7 @@ This repository contains the codebase and assets for BUDE HOME CBE (PG Managemen
 The [docs](docs) directory contains key system design and specification documents:
 - [Production Implementation Plan](docs/PRODUCTION_IMPLEMENTATION_PLAN.md) — production architecture, security model, delivery phases, 74 executable tasks, and 531 micro-tasks
 - [Investor Business Plan](docs/INVESTOR_BUSINESS_PLAN.md) — business model, market-entry strategy, unit economics, five-year projections, funding proposal, risks, and due-diligence checklist
+- [Competitor Landscape](docs/COMPETITOR_LANDSCAPE.md) — 50 competitors, revenue models, public locations, official URLs, strategic relevance, and an ongoing intelligence plan
 - [PG Management System Blueprint.pdf](docs/PG%20Management%20System%20Blueprint.pdf)
 - [PG Management System Master Data Dictionary.pdf](docs/PG%20Management%20System%20Master%20Data%20Dictionary.pdf)
 - [PG Management System API Specifications.pdf](docs/PG%20Management%20System%20API%20Specifications.pdf)

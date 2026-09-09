@@ -8,6 +8,8 @@
 
 > This document is a planning model, not an offer of securities. Market size, pricing, customer counts, revenue, costs, and funding requirements are management assumptions until validated through pilots, contracts, and financial/legal due diligence.
 
+The supporting [Competitor Landscape and Revenue-Model Annex](COMPETITOR_LANDSCAPE.md) profiles 50 direct, adjacent, distribution, and global benchmark companies, including official URLs, public office locations, monetization models, competitive relevance, evidence limitations, and a recurring intelligence process.
+
 ---
 
 ## 1. Executive summary
