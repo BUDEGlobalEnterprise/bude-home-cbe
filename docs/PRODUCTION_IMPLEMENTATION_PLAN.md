@@ -1,10 +1,10 @@
 # BUDE HOME CBE — Production Implementation Plan
 
-**Document status:** Proposed production baseline  
-**Plan version:** 1.0  
-**Prepared:** 2026-09-08  
-**Planning horizon:** Pilot in 20–24 weeks; production GA in 30–36 weeks with the recommended team  
-**Primary region:** India (`ap-south-1`, Mumbai), subject to business and legal approval  
+- **Document status:** Proposed production baseline
+- **Plan version:** 1.0
+- **Prepared:** 2026-09-08
+- **Planning horizon:** Pilot in 20–24 weeks; production GA in 30–36 weeks with the recommended team
+- **Primary region:** India (`ap-south-1`, Mumbai), subject to business and legal approval
 **Source of truth:** This plan resolves and extends the three PDFs in `docs/`. Where this plan conflicts with an unsafe implementation detail in those PDFs, this plan takes precedence after stakeholder approval.
 
 ---

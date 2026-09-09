@@ -1,9 +1,9 @@
 # BUDE HOME CBE — Investor Business Plan
 
-**Status:** Confidential discussion draft  
-**Version:** 1.0  
-**Prepared:** 2026-09-09  
-**Initial market:** Coimbatore, Tamil Nadu  
+- **Status:** Confidential discussion draft
+- **Version:** 1.0
+- **Prepared:** 2026-09-09
+- **Initial market:** Coimbatore, Tamil Nadu
 **Expansion thesis:** High-density education and employment cities across South India, followed by selected Indian urban markets
 
 > This document is a planning model, not an offer of securities. Market size, pricing, customer counts, revenue, costs, and funding requirements are management assumptions until validated through pilots, contracts, and financial/legal due diligence.
